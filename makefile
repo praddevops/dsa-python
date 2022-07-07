@@ -4,11 +4,11 @@ venv/bin/activate: requirements.txt
 
 
 run: venv/bin/activate
-	./venv/bin/python3 algorithms/algorithm_1.py
+	./venv/bin/python3 algorithms/search_algorithms.py
 
 test: venv/bin/activate
-	./venv/bin/python3 tests/test_algorithms_1.py
+	./venv/bin/python3 tests/test_search_algorithms.py
 
 clean:
-	rm -rf __pycache__
-	rm -rf venvb 
+	rm -rf algorithms/__pycache__
+	rm -rf venv 
