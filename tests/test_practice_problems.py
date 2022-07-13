@@ -13,7 +13,7 @@ class TestProblems(unittest.TestCase):
         test_cases = [{'sequence':[9, 11,14, 17,1,4,5,7],'output':4},{'sequence':[21,8,12,15],'output':1}]
         for test_case in test_cases:
            actual = pp.rotated_sorted_list(test_case['sequence'])
-           self.assertEqual(test_case['output'], actual)
+           self.assertEqual(test_case['output'], actual, msg='sequence: {}, expected output: {}, actual output: {}'.format(test_case['sequence'],test_case['output'],actual))
            
 if __name__ == '__main__':
     unittest.main()
