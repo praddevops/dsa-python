@@ -27,13 +27,13 @@ class AlgorithmImplementation:
         elif mid_number < query:
             return 'right' 
 
-    def binary_search(self, **input, condition=self.test_location):
+    def binary_search(self, **input):
         # sequence is in ascending order
         start_position, end_position = 0, len(input['sequence']) - 1
         query = input['query']
         while start_position <= end_position:
             middle_position = (start_position + end_position)//2
-            result = condition(input['sequence'],query,middle_position)
+            result = self.test_location(input['sequence'],query,middle_position)
             if result == 'found':
                 return middle_position
             elif result == 'left':
