@@ -9,7 +9,7 @@ class PracticeProblems():
              mid_position = (lo + hi)//2
              mid_num = sequence[mid_position]
              if lo == hi:
-                return mid_poistion
+                return mid_position
              elif sequence[mid_position-1] > mid_num and mid_num < sequence[mid_position+1]:
                 return mid_position
              elif mid_num < sequence[hi]:
