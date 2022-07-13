@@ -7,7 +7,7 @@ run: venv/bin/activate
 	./venv/bin/python3 algorithms/search_algorithms.py
 
 test: venv/bin/activate
-	./venv/bin/python3 tests/test_search_alogrithms.py
+	./venv/bin/python3 tests/test_search_algorithms.py
 	./venv/bin/python3 tests/test_practice_problems.py
 
 clean:
