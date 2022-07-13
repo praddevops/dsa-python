@@ -1,7 +1,7 @@
-from search_algorithms import AlgorithmImplementation
 
 
-class PracticeProblems(AlgorithmImplementation): 
+
+class PracticeProblems(): 
       
       def rotated_sorted_list(self, sequence):
           lo, hi = 0, len(sequence)-1
